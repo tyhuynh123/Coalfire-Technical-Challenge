@@ -23,7 +23,7 @@ resource "aws_subnet" "private_us_west_2b" {
   availability_zone = "us-west-2b"
 
   tags = {
-    Name = "Public Subnet us-west-2b"
+    Name = "Private Subnet us-west-2b"
   }
 }
 
