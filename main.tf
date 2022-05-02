@@ -223,9 +223,9 @@ resource "aws_elb" "web_elb" {
 resource "aws_autoscaling_group" "web" {
   name = "${aws_launch_configuration.web.name}-asg"
 
-  min_size             = 1
+  min_size             = 2
   desired_capacity     = 2
-  max_size             = 4
+  max_size             = 6
 
   health_check_type    = "ELB"
   load_balancers = [
